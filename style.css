@@ -1,0 +1,145 @@
+/* CSS variables part start */
+:root{
+    --font_family: 'Poppins', sans-serif;
+    --font_family_nunito_sans: 'Nunito Sans', sans-serif;
+    --dark_green_color: #007F5F;
+    --white_color: #FFFFFF;
+    --all_heading_black_color: #292929;
+    --all_paragraph_black_color: #6A6A6A;
+
+}
+/* CSS variables part end */
+/* Common CSS part start */
+*{
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+p, a, ul, ol, h1, h2, h3, h4, h5, h6{
+    padding: 0;
+    margin: 0;
+}
+ul, ol, li{
+    list-style: none;
+}
+/* Common CSS part end */
+/* Navbar part start */
+nav{
+    color: var(--white_color);
+    padding: 40px 0 !important;
+}
+.nav_items ul{
+    gap: 30px;
+}
+.nav_items ul li a{
+    font-size: 16px;
+    font-weight: 400;
+    font-family: var(--font_family);
+}
+.nav_btn a{
+    color: var(--white_color);
+    font-size: 16px;
+    font-weight: 600;
+    font-family: var(--font_family);
+    padding: 16px 35px;
+    background: var(--dark_green_color);
+    border-radius: 17px;
+    text-decoration: none;
+    transition: all linear .3s;
+}
+.nav_btn a:hover{
+    transform: scale(1.1);
+}
+/* Navbar part end */
+/* Banner part start */
+#banner{
+    background: url(../Images/FtH-2/banner-fth-2.png) no-repeat;
+    /* position: relative;
+    z-index: 1; */
+}
+.overlay{
+    /* position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%; */
+    padding: 148px 0 122px 0;
+    color: rgba(0, 0, 0, 0.4);
+    z-index: -1;
+}
+.banner_info{
+    width: 573px;
+}
+.banner_info h1{
+    color: var(--white_color);
+    font-size: 65px;
+    font-weight: 600;
+    font-family: var(--font_family);
+    line-height: 80px;
+}
+.banner_info p{
+    color: var(--white_color);
+    font-size: 16px;
+    font-weight: 400;
+    font-family: var(--font_family);
+    line-height: 30px;
+    padding: 30px 0 40px 0;
+}
+.banner_info .banner_btn a{
+    color: var(--white_color);
+    font-size: 16px;
+    font-weight: 600;
+    font-family: var(--font_family);
+    padding: 16px 35px;
+    background: var(--dark_green_color);
+    border-radius: 17px;
+    text-decoration: none;
+    transition: all linear .3s;
+}
+.banner_info .banner_btn a:hover{
+    transform: scale(1.1);
+}
+.banner_location{
+    width: fit-content;
+    border-radius: 17px;
+    margin-top: 60px;
+    padding: 35px 23px;
+    background: var(--white_color);
+    display: flex;
+    align-items: center;
+}
+.banner_location button{
+    color: var(--white_color);
+    background: var(--dark_green_color);
+    border: none;
+    border-radius: 17px;
+    padding: 30px;
+    margin-left: 70px;
+}
+.banner_location .location_items{
+    gap: 70px;
+}
+.banner_location .location_items h3{
+    color: var(--all_heading_black_color);
+    font-size: 20px;
+    font-weight: 700;
+    font-family: var(--font_family_nunito_sans);
+    line-height: 26px;
+}
+.banner_location .location_items h3 span{
+    padding: 0 20px 0 10px;
+}
+.banner_location .location_items input{
+    border: none;
+    color: var(--all_paragraph_black_color);
+    font-size: 16px;
+    font-weight: 400;
+    font-family: var(--font_family_nunito_sans);
+    margin-left: 26px;
+}
+/* Banner part end */
