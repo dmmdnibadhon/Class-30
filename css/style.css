@@ -29,6 +29,20 @@ p, a, ul, ol, h1, h2, h3, h4, h5, h6{
 ul, ol, li{
     list-style: none;
 }
+.common_btn a{
+    color: var(--white_color);
+    font-size: 16px;
+    font-weight: 600;
+    font-family: var(--font_family);
+    padding: 16px 35px;
+    background: var(--dark_green_color);
+    border-radius: 17px;
+    text-decoration: none;
+    transition: all linear .3s;
+}
+.common_btn a:hover{
+    transform: scale(1.1);
+}
 .all_section_heading h2{
     color: var(--all_heading_black_color);
     font-size: 40px;
@@ -37,6 +51,7 @@ ul, ol, li{
     text-align: center;
 }
 /* Common CSS part end */
+
 /* Navbar part start */
 nav{
     color: var(--white_color);
@@ -50,21 +65,8 @@ nav{
     font-weight: 400;
     font-family: var(--font_family);
 }
-.nav_btn a{
-    color: var(--white_color);
-    font-size: 16px;
-    font-weight: 600;
-    font-family: var(--font_family);
-    padding: 16px 35px;
-    background: var(--dark_green_color);
-    border-radius: 17px;
-    text-decoration: none;
-    transition: all linear .3s;
-}
-.nav_btn a:hover{
-    transform: scale(1.1);
-}
 /* Navbar part end */
+
 /* Banner part start */
 #banner{
     background: url(../images/banner.png) no-repeat;
@@ -100,20 +102,6 @@ nav{
     font-family: var(--font_family);
     line-height: 30px;
     padding: 30px 0 40px 0;
-}
-.banner_info .banner_btn a{
-    color: var(--white_color);
-    font-size: 16px;
-    font-weight: 600;
-    font-family: var(--font_family);
-    padding: 16px 35px;
-    background: var(--dark_green_color);
-    border-radius: 17px;
-    text-decoration: none;
-    transition: all linear .3s;
-}
-.banner_info .banner_btn a:hover{
-    transform: scale(1.1);
 }
 .banner_location{
     width: fit-content;
@@ -286,6 +274,7 @@ box-shadow: 0px 2px 11px -6px rgba(0,0,0,0.75);
     overflow: hidden;
 }
 /* Popular part end */
+
 /* Counter part start */
 #counter{
     background: rgba(0, 0, 0, 0.05);
@@ -319,24 +308,15 @@ box-shadow: 0px 2px 11px -6px rgba(0,0,0,0.75);
 .counter_text ul li span{
     color: var(--dark_green_color);
 }
+.counter_text ul li i{
+    font-size: 26px;
+}
 .counter_text ul li p{
     font-size: 16px;
     line-height: 30px;
     font-weight: 400;
     font-family: var(--font_family);
     margin-bottom: 10px;
-}
-.counter_text .counter_btn a{
-    color: var(--white_color);
-    font-size: 16px;
-    font-weight: 600;
-    font-family: var(--font_family);
-    padding: 16px 35px;
-    background: var(--dark_green_color);
-    border-radius: 17px;
-    text-decoration: none;
-    transition: all linear .3s;
-    margin: 30px 0 60px 0;
 }
 .counter_count{
     padding: 62px 32px;
@@ -370,6 +350,7 @@ box-shadow: 0px 2px 11px -6px rgba(0,0,0,0.75);
     -ms-border-radius: 14px;
     -o-border-radius: 14px;
     width: fit-content;
+    margin-bottom: 20px;
 }
 .counter_count:hover .counter_icon{
     background: var(--white_color);
@@ -388,6 +369,7 @@ box-shadow: 0px 2px 11px -6px rgba(0,0,0,0.75);
     color: var(--white_color);
 } */
 /* Counter part end */
+
 /* Features part start */
 #features{
     padding: 150px 0;
@@ -397,7 +379,7 @@ box-shadow: 0px 2px 11px -6px rgba(0,0,0,0.75);
 .features_text{}
 .features_text h2{
     color: var(--all_heading_black_color);
-    font-size: 40px;
+    font-size: 36px;
     font-weight: 600;
     font-family: var(--font_family);
 }
@@ -425,12 +407,112 @@ box-shadow: 0px 2px 11px -6px rgba(0,0,0,0.75);
     transition: all linear .3s;
     margin-top: 40px;
 }
+.middle_gap{
+    padding: 100px 0;
+}
+
+.features_bg .accordion-button:not(.collapsed){
+    background: rgba(0, 127, 95, 0.1);
+}
+.features_bg .accordion-item{
+    background: rgba(0, 127, 95, 0.1);
+
+}
+.accordion-button:focus{
+    box-shadow: none;
+}
 /* Features part end */
+
 /* Testimonial part start */
 #testimonial{
     padding: 150px 0;
 }
+.testimonial_images{
+    position: relative;
+    height: 100%;
+}
+.testimonial_images .testi_img1 {
+    width: 114px;
+    position: absolute;
+    top: -100px;
+    right: 65px;
+}
+.testimonial_images .testi_img2 {
+    width: 80px;
+    position: absolute;
+    top: 25%;
+    right: 35%;
+}
+.testimonial_images .testi_img3 {
+    width: 123px;
+    position: absolute;
+    top: 30%;
+    left: 0;
+}
+.testimonial_images .testi_img4 {
+    width: 84px;
+    position: absolute;
+    bottom: -25px;
+    right: 45px;
+}
+.testimonial_images .testi_img5 {
+    width: 107px;
+    position: absolute;
+    top: 100%;
+    right: 48%;
+}
+
+.testi_text{}
+.testi_text h2{
+    color: var(--all_heading_black_color);
+    font-size: 40px;
+    font-weight: 600;
+    font-weight:  var(--font-family);
+}
+.testi_text p{
+    color: var(--dark_green_color);
+    font-weight: 45px;
+    padding: 41px 0 24px;
+}
+.testi_text p i{}
+.testi_slide{}
+.testi_slide .slick-dots{
+    display: flex;
+    gap: 10px;
+}
+.testi_slide .slick-dots li button{
+    border: none;
+    font-size: 0;
+    background: var(--all_paragraph_black_color);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.testi_slide .slick-dots .slick-active button{
+    background: var(--dark_green_color);
+}
+.testi_slide .slide_items {}
+.testi_slide .slide_items p{
+    color: var(--all_paragraph_black_color);
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 400;
+    font-weight:  var(--font-family);
+}
+.testi_slide .slide_items h3{
+    color: var(--all_heading_black_color);
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 600;
+    font-weight:  var(--font-family);
+    padding: 24px 0 16px;
+}
 /* Testimonial part end */
+
 /* Subscribe part start */
 #subscribe{
     padding: 150px 0;
@@ -452,9 +534,14 @@ box-shadow: 0px 2px 11px -6px rgba(0,0,0,0.75);
     line-height: 30px;
     font-weight: 400;
     font-family: var(--font_family);
+    padding: 20px 0 52px;
 }
 .sub_input{
-    display: flex;
+    text-align: center;
+    position: relative;
+}
+.sub_input input{
+    border: none;
     width: 770px;
     background: var(--white_color);
     border-radius: 17px;
@@ -462,16 +549,9 @@ box-shadow: 0px 2px 11px -6px rgba(0,0,0,0.75);
     -moz-border-radius: 17px;
     -ms-border-radius: 17px;
     -o-border-radius: 17px;
-    padding: 10px 10px;
-    margin: 0 auto;
-    align-items: center;
-    justify-content: center;
+    padding: 35px 25px;
 }
-.sub_input input{
-    border: none;
-    
-}
-.sub_input button{
+/* .sub_input button{
     border: none;
     padding: 30px 40px;
     width: 159px;
@@ -483,5 +563,79 @@ box-shadow: 0px 2px 11px -6px rgba(0,0,0,0.75);
     -ms-border-radius: 17px;
     -o-border-radius: 17px;
     margin-left: 590px;
+} */
+.sub_btn{
+}
+.sub_btn .common_btn {
+    position: absolute;
+    top: 72.5%;
+    right: 11%;
+}
+.sub_btn .common_btn a{
+    padding: 29px 39px;
 }
 /* Subscribe part end */
+
+/* Footer part start */
+footer{
+    padding: 115px 0 105px;
+}
+.footer_items1{
+}
+.footer_items1 .footer_links{
+    padding: 69px 0 46px;
+}
+.footer_items1 .footer_links a{
+    margin-right: 30px;
+    font-weight: 48px;
+}
+.footer_items1 .footer_links a#red{
+    color: red;
+}
+.footer_items1 .footer_links a i{}
+.footer_items1 .p{
+    color: var(--all_paragraph_black_color);
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 400;
+    font-family: var(--font-family);
+}
+.fitems2{
+    margin-left: 60px;
+}
+/* .fitems2 .tour{
+    width: 70px;
+}
+.fitems2 .support{
+    width: 134px;
+}
+.fitems2 .usefullpages{
+    width: 165px;
+} */
+.fitems2 h3{
+    color: var(--all_heading_black_color);
+    font-size: 25px;
+    font-weight: 600;
+    font-family: var(--font-family);
+    margin-bottom: 30px;
+}
+.fitems2 .fitems2_links h3{}
+.fitems2 .fitems2_links a{
+    display: block;
+    text-decoration: none;
+    color: var(--all_paragraph_black_color);
+    font-size: 16px;
+    line-height: 50px;
+    font-weight: 400;
+    font-family: var(--font-family);
+    padding: 7px 0;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+.fitems2 .fitems2_links a:hover{
+    color: var(--dark_green_color);
+}
+/* Footer part end */
